@@ -9,22 +9,28 @@
 
 rover
 https://github.com/mgonzs13/ros2_rover.git
+```
+cd ~/git && git clone git@github.com:NovoG93/sjtu_drone.git -b ros2
+cd ~/ros2_ws/src && ln -s ~/git/sjtu_drone
+cd .. && rosdep install -r -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO && colcon build --packages-select-regex sjtu*
+```
 drone
-
+https://github.com/noshluk2/sjtu_drone.git
 ```
 cd ~/git && git clone git@github.com:NovoG93/sjtu_drone.git -b ros2
 cd ~/ros2_ws/src && ln -s ~/git/sjtu_drone
 cd .. && rosdep install -r -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO && colcon build --packages-select-regex sjtu*
 ```
 필수 의존성 목록
-    ROS2 패키지 빌드 및 실행 방법 (colcon build, ros2 launch 등)
+
     추가 설정이 필요한 환경 변수나 구성 파일
 
 # 주요 기능 (Features)
 수행가능동작
 드론
   1.사용자가 인터페이스를 통해 xyz 형태의 좌표를 입력하면 드론이 출발점으로부터 x,y,z 좌표로 이동
-  2.h 를 누르면 드론이 로버의 캐리어로 복귀 
+  2.h 를 누르면 드론이 로버의 캐리어로 복귀
+  3.
 
 
     로봇의 센서 및 제어 시스템 개요
