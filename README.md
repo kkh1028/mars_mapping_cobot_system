@@ -1,8 +1,11 @@
 # mars_mapping_cobot_system
 
 # Overview
+
 프로젝트 목적:  Gazebo를 이용해 미지의 넓은 공간을 3D 매핑하는 다중 로봇 시뮬레이션
+
 사용 기술 스택: ROS2 Humble, Gazeobo11, Rviz2
+
 시뮬레이션 환경: 드론 자율주행 로봇
 
 # Installation
@@ -23,17 +26,17 @@ cd .. && rosdep install -r -y --from-paths src --ignore-src --rosdistro $ROS_DIS
 ```
 필수 의존성 목록
 
-    추가 설정이 필요한 환경 변수나 구성 파일
+추가 설정이 필요한 환경 변수나 구성 파일
 
 # 주요 기능 (Features)
 수행가능동작
 드론
   1.사용자가 인터페이스를 통해 xyz 형태의 좌표를 입력하면 드론이 출발점으로부터 x,y,z 좌표로 이동
+  
   2.h 를 누르면 드론이 로버의 캐리어로 복귀
+  
   3.
 
-
-    로봇의 센서 및 제어 시스템 개요
     시뮬레이션 내에서 수행할 수 있는 동작 (예: 네비게이션, 장애물 회피, 조작 등)
     주요 스크립트 및 노드 역할 설명
 
